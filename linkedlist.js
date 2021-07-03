@@ -113,7 +113,7 @@ ll.addNode(70);
 ll.printLinkedList();
 ll.deleteNodeByData(40);
 ll.printLinkedList();
-ll.addNodeAtPosition( 4,47,);
+ll.addNodeAtPosition( 4,47);
 ll.printLinkedList();
 ll.getNodeAtPosition(2);
 ll.deleteNodeAtPosition(1);
