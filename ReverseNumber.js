@@ -8,13 +8,13 @@ function reverse(x) {
     n = n * 10 + rem
     x = Math.floor(x / 10);
   }
-  return x > Math.pow(2, 31) ? 0 : x < Math.pow(-2, 31)-1 ? 0 : n;
+  return n > Math.pow(2, 31) ? 0 : n < Math.pow(-2, 31)-1 ? 0 : n;
 }
 
 function reverseUsingStringOp(x) {
   let arr = x.toString().split('');
   let reverse = parseInt(arr.reverse().join(''));
-  return x > Math.pow(2, 31) ? 0 : x < Math.pow(-2, 31)-1 ? 0 : reverse;
+  return reverse > Math.pow(2, 31) ? 0 : reverse < Math.pow(-2, 31)-1 ? 0 : reverse;
 }
 
 console.log(reverseUsingStringOp(651234));
